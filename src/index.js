@@ -38,7 +38,7 @@ Component({
 
       const systemInfo = await wx.getSystemInfo()
 
-      const { statusBarHeight, windowWidth } = systemInfo
+      const {statusBarHeight, windowWidth} = systemInfo
 
       const rightCapsule = wx.getMenuButtonBoundingClientRect()
 

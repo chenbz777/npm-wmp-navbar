@@ -1,12 +1,12 @@
 ## 简介
 
-**wmp-watermark** 是一款微信小程序水印**自定义组件**，通过canvas合成图片和文字水印，自动铺满水印至整个图片，结合了懒加载一起使用，可大大优化加载速度。
+**wmp-navbar** 是一款微信小程序导航栏**自定义组件**，通过简单的属性配置即可使用，同时为了保证可拓展性，预留了slot进行自定义展示。
 
 <br />
 
 ## 效果图
 
-[<img src="https://s1.ax1x.com/2022/05/08/OlHkMF.png" alt="OlHkMF.png" style="zoom: 33%;" />](https://imgtu.com/i/OlHkMF)
+[![vyrvCQ.png](https://s1.ax1x.com/2022/08/21/vyrvCQ.png)](https://imgse.com/i/vyrvCQ)
 
 <br />
 
@@ -23,7 +23,7 @@ npm init
 ### 安装
 
 ```bash
-npm i @chenbz/wmp-watermark
+npm i @chenbz/wmp-navbar
 ```
 
 
@@ -36,23 +36,21 @@ npm i @chenbz/wmp-watermark
 
 ### 使用
 
-`/pages/home/index.json`
-
 ```json
+/pages/home/index.json
 {
     "usingComponents": {
-        "wmp-watermark": "@chenbz/wmp-watermark"
+        "wmp-navbar": "@chenbz/wmp-navbar"
     }
 }
 ```
 
 
 
-`/pages/home/index.wxml`
-
 ```html
+/pages/home/index.wxml
 <view>
-  <wmp-watermark imageUrl="https://s1.ax1x.com/2022/05/08/OlHYdA.png"></wmp-watermark>
+<wmp-navbar title="标题"></wmp-navbar>
 </view>
 ```
 
@@ -60,14 +58,13 @@ npm i @chenbz/wmp-watermark
 
 ## 属性
 
-| 属性名       | 类型    | 默认值                                    | 描述              |
-| ------------ | ------- | ----------------------------------------- | ----------------- |
-| imageUrl     | String  | https://s1.ax1x.com/2022/05/08/OlbiFI.gif | 图片url（必传！） |
-| lazyImageUrl | String  | https://s1.ax1x.com/2022/05/08/OlbiFI.gif | "加载中"图片url   |
-| content      | String  | 请勿外传,盗版必究                         | 水印文字          |
-| contentColor | String  | rgba(255,255,255,.5)                      | 水印字体颜色      |
-| contentSize  | Number  | 15                                        | 水印字体大小      |
-| level        | Number  | 60                                        | 水印水平间距      |
-| vertical     | Number  | 150                                       | 水印垂直间距      |
-| lazy         | Boolean | true                                      | 懒加载            |
+| 属性        | 描述             | 默认值      |
+| ----------- | ---------------- | ----------- |
+| title       | 标题             | hello world |
+| showGoBack  | 显示返回按钮     | false       |
+| showHome    | 显示返回主页按钮 | false       |
+| position    | 是否开启绝对定位 | false       |
+| bg_color    | 导航栏背景颜色   | transparent |
+| title_color | 导航栏标题颜色   | \#000000    |
+| showSlot    | 是否开启slot     | false       |
 
