@@ -50,7 +50,7 @@ npm i @chenbz/wmp-navbar
 
 ```html
 <view>
-<wmp-navbar title="标题"></wmp-navbar>
+  <wmp-navbar title="标题"></wmp-navbar>
 </view>
 ```
 
