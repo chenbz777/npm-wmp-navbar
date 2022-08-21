@@ -1,4 +1,4 @@
-
+// components/NavBar/index.ts
 Component({
   properties: {
     title: { // 标题
@@ -17,11 +17,11 @@ Component({
       type: Boolean,
       value: false,
     },
-    bg_color: { // 导航栏背景颜色
+    bgColor: { // 导航栏背景颜色
       type: String,
       value: 'transparent',
     },
-    title_color: { // 导航栏标题颜色
+    titleColor: { // 导航栏标题颜色
       type: String,
       value: '#000000',
     },
@@ -38,7 +38,9 @@ Component({
 
       const systemInfo = await wx.getSystemInfo()
 
-      const {statusBarHeight, windowWidth} = systemInfo
+      const {
+        statusBarHeight, windowWidth
+      } = systemInfo
 
       const rightCapsule = wx.getMenuButtonBoundingClientRect()
 

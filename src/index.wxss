@@ -36,6 +36,8 @@
 .navbar__body__title {
     flex: 1;
     padding: 0 5px;
+    font-weight: 500;
+    font-size: 18px;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;

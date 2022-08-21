@@ -1,4 +1,4 @@
-<view class="navbar {{position ? 'navbar--position' : ''}}" style="background-color: {{bg_color}};">
+<view class="navbar {{position ? 'navbar--position' : ''}}" style="background-color: {{bgColor}};">
     <view style="width: 100%; height: {{statusBarHeight}}px;"></view>
     <view style="padding: {{navBarYPadding}}px {{navBarXPadding}}px; height: {{navBarHeight}}px;" class="c-row-y-center navbar__body">
 
@@ -15,7 +15,7 @@
             </view>
         </view>
 
-        <view class="navbar__body__title" style="color: {{title_color}};" wx:if="{{!showSlot}}">
+        <view class="navbar__body__title" style="color: {{titleColor}};" wx:if="{{!showSlot}}">
             {{title}}
         </view>
 
