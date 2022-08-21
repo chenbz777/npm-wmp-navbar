@@ -36,8 +36,9 @@ npm i @chenbz/wmp-navbar
 
 ### 使用
 
+`/pages/home/index.json`
+
 ```json
-/pages/home/index.json
 {
     "usingComponents": {
         "wmp-navbar": "@chenbz/wmp-navbar"
@@ -45,10 +46,9 @@ npm i @chenbz/wmp-navbar
 }
 ```
 
-
+`/pages/home/index.wxml`
 
 ```html
-/pages/home/index.wxml
 <view>
 <wmp-navbar title="标题"></wmp-navbar>
 </view>
