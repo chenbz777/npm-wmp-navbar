@@ -64,7 +64,7 @@ npm i @chenbz/wmp-navbar
 | showGoBack  | 显示返回按钮     | false       |
 | showHome    | 显示返回主页按钮 | false       |
 | position    | 是否开启绝对定位 | false       |
-| bg_color    | 导航栏背景颜色   | transparent |
-| title_color | 导航栏标题颜色   | \#000000    |
+| bgColor    | 导航栏背景颜色   | transparent |
+| titleColor | 导航栏标题颜色   | \#000000    |
 | showSlot    | 是否开启slot     | false       |
 
