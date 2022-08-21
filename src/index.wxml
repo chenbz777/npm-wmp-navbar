@@ -1,0 +1,24 @@
+<view class="navbar {{position ? 'navbar--position' : ''}}" style="background-color: {{bg_color}};">
+    <view style="width: 100%; height: {{statusBarHeight}}px;"></view>
+    <view style="padding: {{navBarYPadding}}px {{navBarXPadding}}px; height: {{navBarHeight}}px;" class="c-row-y-center navbar__body">
+
+        <slot wx:if="{{showSlot}}"></slot>
+
+        <view style="width: {{rightCapsuleWidth}}px; border-radius: {{navBarHeight / 2}}px; height: 100%;" class="c-row-y-center" wx:if="{{!showSlot}}">
+            <image src="./icon/left.svg" mode="scaleToFill" style="width: {{navBarBodyHeight}}px; height: {{navBarBodyHeight}}px; padding: {{navBarYPadding}}px;" class="navbar__body__left--one" wx:if="{{showGoBack && (!showHome)}}" bindtap="goBack"></image>
+            <view style="border-radius: {{navBarHeight / 2}}px;" class="navbar__body__left" wx:if="{{showGoBack && showHome}}">
+                <image src="./icon/left.svg" mode="heightFix" style="padding: 0 {{navBarYPadding}}px" class="navbar__body__left__icon" bindtap="goBack"></image>
+                <view class="c-row-center navbar__body__left__divider">
+                    |
+                </view>
+                <image src="./icon/home.svg" mode="heightFix" style="padding: 0 {{navBarYPadding}}px" class="navbar__body__left__icon" bindtap="goHome"></image>
+            </view>
+        </view>
+
+        <view class="navbar__body__title" style="color: {{title_color}};" wx:if="{{!showSlot}}">
+            {{title}}
+        </view>
+
+        <view style="width: {{rightCapsuleWidth}}px;"></view>
+    </view>
+</view>
