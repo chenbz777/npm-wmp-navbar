@@ -75,6 +75,7 @@ Component({
     navBarHeight: 40,
     navBarBodyHeight: 32,
     navBarXPadding: 8,
+    rightCapsuleWidth: 87,
   },
 
   methods: {
