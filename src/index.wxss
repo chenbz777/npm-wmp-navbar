@@ -25,6 +25,13 @@
     flex: 1;
 }
 
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
 .navbar--position {
     position: fixed;
     top: 0;
@@ -56,11 +63,16 @@
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.navbar__body__left-container--one {
+    box-sizing: border-box;
+    border: 1px solid #e3e6eb;
+    padding-right: 10px;
+}
+
 .navbar__body__left--one {
     display: block;
     box-sizing: border-box;
-    border: 1px solid transparent;
-    border: 1px solid #e3e6eb;
+    /* border: 1px solid #e3e6eb; */
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 100%;
 }
