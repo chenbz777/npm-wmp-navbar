@@ -6,7 +6,7 @@
 
 ## 效果图
 
-[![vyrvCQ.png](https://s1.ax1x.com/2022/08/21/vyrvCQ.png)](https://imgse.com/i/vyrvCQ)
+![效果图](https://s1.ax1x.com/2022/09/07/vbZ0gA.png)
 
 <br />
 

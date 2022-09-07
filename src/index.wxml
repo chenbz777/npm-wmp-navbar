@@ -6,17 +6,17 @@
 
         <view style="width: {{rightCapsuleWidth}}px; border-radius: {{navBarHeight / 2}}px; height: 100%;" class="c-row-y-center" wx:if="{{!showSlot}}">
             <view class="navbar__body__left-container--one c-row-y-center" style="border-radius: {{navBarHeight / 2}}px;" wx:if="{{showGoBack && (!showHome)}}" bindtap="goBack">
-                <image src="./icon/left.svg" mode="scaleToFill" style="width: {{navBarBodyHeight}}px; height: {{navBarBodyHeight}}px; padding: {{navBarYPadding + 2}}px;" class="navbar__body__left--one"></image>
-                返回
+                <image src="./icon/left.svg" mode="scaleToFill" style="width: {{navBarBodyHeight}}px; height: {{navBarBodyHeight}}px; padding: {{navBarYPadding + 3}}px;" class="navbar__body__left--one"></image>
+                <text style="margin-left: -7px;">返回</text>
             </view>
 
 
             <view style="border-radius: {{navBarHeight / 2}}px;" class="navbar__body__left" wx:if="{{showGoBack && showHome}}">
-                <image src="./icon/left.svg" mode="heightFix" style="padding: 0 {{navBarYPadding}}px" class="navbar__body__left__icon" bindtap="goBack"></image>
+                <image src="./icon/left.svg" mode="heightFix" style="padding: {{navBarYPadding - 3}}px {{navBarYPadding}}px; margin-left: 5px;" class="navbar__body__left__icon" bindtap="goBack"></image>
                 <view class="c-row-center navbar__body__left__divider">
                     |
                 </view>
-                <image src="./icon/home.svg" mode="heightFix" style="padding: 0 {{navBarYPadding}}px" class="navbar__body__left__icon" bindtap="goHome"></image>
+                <image src="./icon/home.svg" mode="heightFix" style="padding: {{navBarYPadding - 3}}px {{navBarYPadding}}px; margin-right: 5px;" class="navbar__body__left__icon" bindtap="goHome"></image>
             </view>
         </view>
 
