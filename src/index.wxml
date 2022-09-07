@@ -13,7 +13,7 @@
 
             <view style="border-radius: {{navBarHeight / 2}}px;" class="navbar__body__left" wx:if="{{showGoBack && showHome}}">
                 <image src="./icon/left.svg" mode="heightFix" style="padding: {{navBarYPadding - 3}}px {{navBarYPadding}}px; margin-left: 5px;" class="navbar__body__left__icon" bindtap="goBack"></image>
-                <view class="c-row-center navbar__body__left__divider">
+                <view class="c-row-center navbar__body__left__divider" style="margin-left: -3px;">
                     |
                 </view>
                 <image src="./icon/home.svg" mode="heightFix" style="padding: {{navBarYPadding - 3}}px {{navBarYPadding}}px; margin-right: 5px;" class="navbar__body__left__icon" bindtap="goHome"></image>

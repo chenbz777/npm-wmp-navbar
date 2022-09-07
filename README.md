@@ -6,7 +6,7 @@
 
 ## 效果图
 
-![效果图](https://s1.ax1x.com/2022/09/07/vbZ0gA.png)
+![效果图](https://s1.ax1x.com/2022/09/07/vbZj29.png)
 
 <br />
 
