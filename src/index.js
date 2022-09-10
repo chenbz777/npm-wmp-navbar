@@ -19,7 +19,7 @@ Component({
     },
     bgColor: { // 导航栏背景颜色
       type: String,
-      value: 'transparent',
+      value: 'white',
     },
     titleColor: { // 导航栏标题颜色
       type: String,
