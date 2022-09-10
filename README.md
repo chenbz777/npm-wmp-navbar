@@ -10,6 +10,15 @@
 
 <br />
 
+## 亮点
+
+1. ✅保证`安卓`和`IOS`显示效果一致
+2. 拓展🉑️同时显示`返回上一页`和`返回首页`
+3. 点击标题🉑️返回顶部
+4. 预留slot进行拓展
+
+<br />
+
 ## 使用
 
 ### 初始化项目
@@ -36,19 +45,14 @@ npm i @chenbz/wmp-navbar
 
 ### 使用
 
-`/pages/home/index.json`
-
-```json
+```
+/pages/home/index.json
 {
     "usingComponents": {
         "wmp-navbar": "@chenbz/wmp-navbar"
     }
 }
-```
-
-`/pages/home/index.wxml`
-
-```html
+/pages/home/index.wxml
 <view>
   <wmp-navbar title="标题"></wmp-navbar>
 </view>
@@ -58,13 +62,21 @@ npm i @chenbz/wmp-navbar
 
 ## 属性
 
-| 属性        | 描述             | 默认值      |
-| ----------- | ---------------- | ----------- |
-| title       | 标题             | hello world |
-| showGoBack  | 显示返回按钮     | false       |
-| showHome    | 显示返回主页按钮 | false       |
-| position    | 是否开启绝对定位 | false       |
+| 属性       | 描述             | 默认值      |
+| ---------- | ---------------- | ----------- |
+| title      | 标题             | hello world |
+| showGoBack | 显示返回按钮     | false       |
+| showHome   | 显示返回主页按钮 | false       |
+| position   | 是否开启绝对定位 | false       |
 | bgColor    | 导航栏背景颜色   | transparent |
 | titleColor | 导航栏标题颜色   | \#000000    |
-| showSlot    | 是否开启slot     | false       |
+| showSlot   | 是否开启slot     | false       |
+
+<br />
+
+## 更新日志
+
+- 2022-08-21 初次提交
+- 2022-09-07 优化顶部导航栏粘性定位顶部
+- 2022-09-10 新增点击标题返回顶部
 
