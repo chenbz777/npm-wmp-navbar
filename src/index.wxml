@@ -20,7 +20,7 @@
             </view>
         </view>
 
-        <view class="navbar__body__title" style="color: {{titleColor}};" wx:if="{{!showSlot}}">
+        <view class="navbar__body__title" style="color: {{titleColor}};" wx:if="{{!showSlot}}" bindtap="backTop">
             {{title}}
         </view>
 

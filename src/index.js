@@ -99,6 +99,12 @@ Component({
       wx.navigateBack({
         delta: 10
       })
-    }
+    },
+    backTop() {
+      wx.pageScrollTo({
+        scrollTop: 0,
+        duration: 300
+      })
+    },
   }
 })
