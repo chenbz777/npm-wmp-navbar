@@ -1,6 +1,6 @@
 {
   "name": "@chenbz/wmp-navbar",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "",
   "main": "miniprogram_dist/index.js",
   "scripts": {
