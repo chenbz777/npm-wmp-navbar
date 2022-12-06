@@ -28,6 +28,10 @@ Component({
       type: Boolean,
       value: false,
     },
+    showBlankBlock: { // 是否开启空白块占位
+      type: Boolean,
+      value: false,
+    },
   },
 
   lifetimes: {

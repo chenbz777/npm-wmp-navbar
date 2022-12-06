@@ -1,37 +1,39 @@
 <view style="{{styleData}}">
-    <view class="c-navbar {{position ? 'c-navbar--position' : ''}}">
-        <!-- 状态栏 -->
-        <view class="c-navbar__status-bar"></view>
-        <!-- 导航栏 -->
-        <view class="c-navbar__body" wx:if="{{!showSlot}}">
-            <!-- 导航栏左边 => 胶囊 -->
-            <view class="c-navbar__body__left">
-                <view class="c-navbar__body__left__back" wx:if="{{showGoBack && (!showHome)}}" bindtap="goBack">
-                    <image src="{{backIconUrl}}" class="c-navbar__body__icon c-navbar__body__left__icon--back"></image>
-                    <text>返回</text>
-                </view>
-                <view class="c-navbar__body__left__home" wx:if="{{showGoBack && showHome}}">
-                    <view class="c-navbar__body__left__home__back" bindtap="goBack">
-                        <image src="{{backIconUrl}}" class="c-navbar__body__icon c-navbar__body__left__home--back"></image>
-                    </view>
-                    <view class="c-navbar__body__left__home--division"></view>
-                    <view class="c-navbar__body__left__home__home" bindtap="goHome">
-                        <image src="{{homeIconUrl}}" class="c-navbar__body__icon c-navbar__body__left__home--home"></image>
-                    </view>
-                </view>
-            </view>
-            <!-- 导航栏中间 => 标题 -->
-            <view class="c-navbar__body__title" bindtap="backTop">{{title}}</view>
-            <!-- 导航栏右边 => 胶囊 -->
-            <view class="c-navbar__body__right"></view>
+  <view class="c-navbar {{position ? 'c-navbar--position' : ''}}">
+    <!-- 状态栏 -->
+    <view class="c-navbar__status-bar"></view>
+    <!-- 导航栏 -->
+    <view class="c-navbar__body" wx:if="{{!showSlot}}">
+      <!-- 导航栏左边 => 胶囊 -->
+      <view class="c-navbar__body__left">
+        <view class="c-navbar__body__left__back" wx:if="{{showGoBack && (!showHome)}}" bindtap="goBack">
+          <image src="{{backIconUrl}}" class="c-navbar__body__icon c-navbar__body__left__icon--back"></image>
+          <text>返回</text>
         </view>
-        <!-- 开启slot -->
-        <view class="c-navbar__body" wx:if="{{showSlot}}">
-            <view class="c-navbar__body--slot">
-                <slot></slot>
-            </view>
-            <!-- 导航栏右边 => 胶囊 -->
-            <view class="c-navbar__body__right"></view>
+        <view class="c-navbar__body__left__home" wx:if="{{showGoBack && showHome}}">
+          <view class="c-navbar__body__left__home__back" bindtap="goBack">
+            <image src="{{backIconUrl}}" class="c-navbar__body__icon c-navbar__body__left__home--back"></image>
+          </view>
+          <view class="c-navbar__body__left__home--division"></view>
+          <view class="c-navbar__body__left__home__home" bindtap="goHome">
+            <image src="{{homeIconUrl}}" class="c-navbar__body__icon c-navbar__body__left__home--home"></image>
+          </view>
         </view>
+      </view>
+      <!-- 导航栏中间 => 标题 -->
+      <view class="c-navbar__body__title" bindtap="backTop">{{title}}</view>
+      <!-- 导航栏右边 => 胶囊 -->
+      <view class="c-navbar__body__right"></view>
     </view>
+    <!-- 开启slot -->
+    <view class="c-navbar__body" wx:if="{{showSlot}}">
+      <view class="c-navbar__body--slot">
+        <slot></slot>
+      </view>
+      <!-- 导航栏右边 => 胶囊 -->
+      <view class="c-navbar__body__right"></view>
+    </view>
+  </view>
+  <!-- 空白块占位符, 用于解决下拉刷新导航栏掉下来的问题, 需要配合开启position -->
+  <view class="c-blank-block" wx:if="{{showBlankBlock}}"></view>
 </view>
