@@ -45,14 +45,20 @@ npm i @chenbz/wmp-navbar
 
 ### 使用
 
+index.json
+
 ```
-/pages/home/index.json
 {
     "usingComponents": {
         "wmp-navbar": "@chenbz/wmp-navbar"
-    }
+    },
+    "navigationStyle": "custom"
 }
-/pages/home/index.wxml
+```
+
+index.wxml
+
+```
 <view>
   <wmp-navbar title="标题"></wmp-navbar>
 </view>
@@ -62,15 +68,16 @@ npm i @chenbz/wmp-navbar
 
 ## 属性
 
-| 属性       | 描述             | 默认值      |
-| ---------- | ---------------- | ----------- |
-| title      | 标题             | hello world |
-| showGoBack | 显示返回按钮     | false       |
-| showHome   | 显示返回主页按钮 | false       |
-| position   | 是否开启绝对定位 | false       |
-| bgColor    | 导航栏背景颜色   | white |
-| titleColor | 导航栏标题颜色   | \#000000    |
-| showSlot   | 是否开启slot     | false       |
+| 属性           | 描述               | 默认值      |
+| -------------- | ------------------ | ----------- |
+| title          | 标题               | hello world |
+| showGoBack     | 显示返回按钮       | false       |
+| showHome       | 显示返回主页按钮   | false       |
+| position       | 是否开启绝对定位   | false       |
+| bgColor        | 导航栏背景颜色     | white       |
+| titleColor     | 导航栏标题颜色     | \#000000    |
+| showSlot       | 是否开启slot       | false       |
+| showBlankBlock | 是否开启空白块占位 | false       |
 
 <br />
 
